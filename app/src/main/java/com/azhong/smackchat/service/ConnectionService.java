@@ -52,8 +52,8 @@ import java.util.Map;
  */
 public class ConnectionService extends Service {
 
-    public static final String SERVER_NAME = "izqhrnmkjn55syz";//主机名
-    public static final String SERVER_IP = "192.168.0.252";//ip
+    public static final String SERVER_NAME = "timeremind.cn";//主机名
+    public static final String SERVER_IP = "timeremind.cn";//ip
     public static final int PORT = 5222;//端口
     private XMPPTCPConnection connection;
     private DbHelper dbHelper;
@@ -198,7 +198,7 @@ public class ConnectionService extends Service {
                 }
                 try {
                     ConnectionService.this.connection.login(userName, password);//登录
-                    user = dbHelper.SetUser(userName + "@106.14.20.176", password);//插入数据库
+                    user = dbHelper.SetUser(userName + "@timeremind.cn", password);//插入数据库
                     getOfflineMessage();//一上线获取离线消息
                     initListener();//登录成功开启消息监听
                     RxBus.getInstance().post(new HandleEvent("LoginActivity", true));

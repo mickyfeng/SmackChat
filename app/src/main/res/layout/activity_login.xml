@@ -24,9 +24,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="QQ号/手机号/邮箱"
+            android:hint="帐号"
             android:paddingLeft="10dp"
-            android:text="azhon" />
+            android:text="tsung4" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -41,7 +41,7 @@
             android:hint="密码"
             android:inputType="textPassword"
             android:paddingLeft="10dp"
-            android:text="123456" />
+            android:text="tsung4" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
